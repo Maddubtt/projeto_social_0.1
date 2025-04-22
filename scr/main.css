@@ -1,16 +1,8 @@
-main {
-    color: black;
-    height: 70vh;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-}
-
 .main--container {
     background-color: cadetblue;
     height: 300px;
     width: 70%;
+    border-radius: 10px;
     text-align: center;
     display: flex;
     align-items: center;

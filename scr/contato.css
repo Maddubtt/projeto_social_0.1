@@ -1,0 +1,29 @@
+.main--container {
+    background-color: cadetblue;
+    height: 300px;
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato--card {
+    background-color: aliceblue;
+    width: 50%;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main--text {
+    margin-top: 1rem;
+}
+
+span {
+    font-weight: bold;
+}

@@ -4,6 +4,15 @@ html {
     color: white;
 }
 
+main {
+    color: black;
+    height: 70vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
@@ -22,6 +31,10 @@ html {
 .navbar--left img.logo {
     max-width: 120px;
     height: auto;
+}
+
+.navbar--left a:hover {
+    opacity: 0.8;
 }
 
 .navbar--right {
