@@ -87,5 +87,23 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #4A90E2;
+  background-color: #4a90e2;
+}
+.botao-voltar{
+width: 10%;
+  padding: 0.8rem;
+  background-color: #142F4A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  top: 40%;
+position : absolute;
+top: 20%;
+left: 15%;
+height: 6%;
 }
