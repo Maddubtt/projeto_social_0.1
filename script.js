@@ -1,11 +1,11 @@
 // BOTÕES
 
-const btnContato = document.getElementById('btn-contato');
-const btnServicos = document.getElementById('btn-servicos');
-const btnCadastro = document.getElementById('btn-cadastro');
-const btnEdit = document.getElementById('btn-edit');
-const btnPessoa = document.getElementById('btn-pessoa');
-const btnOng = document.getElementById('btn-ong');
+const btnContato = document.getElementById('btncontato');
+const btnServicos = document.getElementById('btnservicos');
+const btnCadastro = document.getElementById('btncadastro');
+const btnEdit = document.getElementById('btnedit');
+const btnPessoa = document.getElementById('btnpessoa');
+const btnOng = document.getElementById('btnong');
 
 btnContato.addEventListener('click', () => {
     window.location.href = 'contato.html';
@@ -33,12 +33,12 @@ btnOng.addEventListener('click', () => {
 
 // CARROSSEL
 
-// let cont = 1;
+let cont = 1;
 
-// document.getElementById("radio-1").checked = true;
+document.getElementById("radio-1").checked = true;
 
-// setInterval(() => {
-//   cont++;
-//   if (cont > 4) cont = 1;
-//   document.getElementById("radio-" + cont).checked = true;
-// }, 5000);
+setInterval(() => {
+  cont++;
+  if (cont > 4) cont = 1;
+  document.getElementById("radio-" + cont).checked = true;
+}, 5000);
