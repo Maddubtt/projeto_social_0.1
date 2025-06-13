@@ -89,3 +89,16 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #4A90E2;
 }
+
+.botao{
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #142F4A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
