@@ -7,16 +7,8 @@ main {
 
 .main--container {
     background-color: cadetblue;
-    height: 100%;
-    max-width: 100%;
-    margin: 1.5rem 0;
-    padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .main__desc {
@@ -25,35 +17,75 @@ main {
     font-weight: 700;
 }
 
-.carousel {
-  background-color: #000;
-  width: 80%;
-  max-width: 100%;
-  height: 25rem;
+.slider {
+  width: 100%;
+  max-width: 800px;
   overflow: hidden;
   position: relative;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  height: 400px;
+  margin: 40px auto 0;
 }
 
-.carousel-track {
+.carrosel-conteudo {
   display: flex;
-  transition: transform 0.5s infinite ease-in-out;
-  width: 300%;
+  width: 400%;
   height: 100%;
+  transition: all 0.5s ease;
 }
 
-.carousel-track img {
+.slide {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-tamanho {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background-color: black;
-  flex-shrink: 0;
+  object-fit: cover;
 }
 
-/* @keyframes slide {
-  0%, 25% { transform: translateX(0); }
-  33.33%, 58.33% { transform: translateX(-100%); }
-  66.66%, 91.66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-} */
+input[type="radio"] {
+  display: none;
+}
+
+.manual {
+  margin: 0.2rem 0 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bolinha {
+  background-color: transparent;
+  border: 2px solid rgb(34, 102, 139);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.bolinha:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bolinha:hover {
+  background-color: rgb(34, 102, 139);
+}
+
+/* Movendo o container */
+#radio-1:checked ~ .slider .carrosel-conteudo {
+  margin-left: 0%;
+}
+#radio-2:checked ~ .slider .carrosel-conteudo {
+  margin-left: -100%;
+}
+#radio-3:checked ~ .slider .carrosel-conteudo {
+  margin-left: -200%;
+}
+#radio-4:checked ~ .slider .carrosel-conteudo {
+  margin-left: -300%;
+}
