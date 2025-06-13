@@ -64,11 +64,15 @@ main {
     transition: background-color 2.5 ease;
 }
 
+.nav--link {
+    text-decoration: none;
+    color: white;
+}
+
 button:hover {
     background-color: #4A90E2;
     color: black;
 }
-
 
 footer {
     background-color: #142F4A;
@@ -80,6 +84,7 @@ footer {
     flex-wrap: wrap;
     padding: 1.5rem;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 footer a {

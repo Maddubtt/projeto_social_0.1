@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./img/icon-site.ico" />
-    <link rel="stylesheet" href="./scr/reset.css" />
-    <link rel="stylesheet" href="./scr/base.css" />
-    <link rel="stylesheet" href="./scr/main.css" />
-    <link rel="stylesheet" href="./scr/ofc_main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon-site.ico"/>
+    <link rel="stylesheet" href="./src/reset.css" />
+    <link rel="stylesheet" href="./src/base.css" />
+    <link rel="stylesheet" href="./src/main.css" />
     <title>Projeto Social - Elo Solidário</title>
   </head>
 
@@ -21,15 +20,25 @@
         </div>
 
         <div class="navbar--right">
-          <button class="nav-button" id="btn-contato">Contato</button>
-          <button class="nav-button" id="btn-servicos">Serviços</button>
-          <button class="nav-button" id="btn-cadastro">Cadastro</button>
+          <button class="nav-button" id="btncontato">Contato</button>
+          <button class="nav-button" id="btnservicos">Serviços</button>
+          <button class="nav-button" id="btncadastro">Cadastro</button>
+          <button class="nav-button" id="btnedit">Editar</button>
+          <button class="nav-button" id="btnpessoa" hidden>Pessoa</button>
+          <button class="nav-button" id="btnong" hidden>Ong</button>
         </div>
       </nav>
     </header>
 
     <main>
+      <!-- Radios fora do slider para poder controlar via CSS -->
+      <input type="radio" name="btn-radio" id="radio-1" checked />
+      <input type="radio" name="btn-radio" id="radio-2" />
+      <input type="radio" name="btn-radio" id="radio-3" />
+      <input type="radio" name="btn-radio" id="radio-4" />
+
       <section class="slider">
+        <!-- Container que se move -->
         <div class="carrosel-conteudo" id="faixa-slides">
           <div class="slide">
             <img class="img-tamanho" src="./img/img_1.jpeg" alt="Imagem 1" />
@@ -46,24 +55,40 @@
         </div>
       </section>
 
+      <!-- Bolinhas -->
+      <div class="manual">
+        <label for="radio-1" class="bolinha"></label>
+        <label for="radio-2" class="bolinha"></label>
+        <label for="radio-3" class="bolinha"></label>
+        <label for="radio-4" class="bolinha"></label>
+      </div>
+
       <div class="main--container">
-         
-         <div class="main__desc">
-            <p>
-               Elo Solidário é uma plataforma social que conecta pessoas em situação de vulnerabilidade a redes de apoio confiáveis, promovendo dignidade, acolhimento e inclusão. Nosso objetivo é facilitar o acesso a serviços essenciais como alimentação, vestuário, moradia e saúde por meio de um sistema intuitivo e acessível.
-            </p>
-   
-            <p>
-               Acreditamos no poder da tecnologia para transformar realidades, e por isso desenvolvemos um ambiente onde ONGs, voluntários e instituições públicas podem colaborar de forma eficiente, transparente e segura. Com recursos de geolocalização, formulários inteligentes e integração com banco de dados, o Elo Solidário garante que cada ajuda chegue a quem mais precisa.
-            </p>
-         </div>
+        <div class="main__desc">
+          <p>
+            Elo Solidário é uma plataforma social que conecta pessoas em
+            situação de vulnerabilidade a redes de apoio confiáveis, promovendo
+            dignidade, acolhimento e inclusão. Nosso objetivo é facilitar o
+            acesso a serviços essenciais como alimentação, vestuário, moradia e
+            saúde por meio de um sistema intuitivo e acessível.
+          </p>
+
+          <p>
+            Acreditamos no poder da tecnologia para transformar realidades, e
+            por isso desenvolvemos um ambiente onde ONGs, voluntários e
+            instituições públicas podem colaborar de forma eficiente,
+            transparente e segura. Com recursos de geolocalização, formulários
+            inteligentes e integração com banco de dados, o Elo Solidário
+            garante que cada ajuda chegue a quem mais precisa.
+          </p>
+        </div>
       </div>
     </main>
 
     <footer>
       <a href="./">INFORMAÇÕES DE CONTATO</a>
       <a href="./">SEJA ONG PARCEIRA</a>
-      <a href="./">AJUDA??</a>
+      <a href="./">AJUDA?</a>
     </footer>
 
     <script src="./script.js"></script>
